@@ -6,11 +6,7 @@ import Card from "react-bootstrap/Card";
 import DropdownComponent from "components/DropDownComponent";
 import Button from "react-bootstrap/Button";
 import EmployeeCard from "./EmployeeCard";
-import handler from "../pages/api/get_employees";
 
-export const config = {
-    runtime: 'experimental-edge',
-}
 
 export default function SearchSection(props) {
     const {all_providers} = props;
@@ -54,7 +50,6 @@ export default function SearchSection(props) {
     const [SearchFoundNone, setSearchFoundNone] = useState(false);
 
     useEffect(() => {
-        // If Dropdown3.options are empty, then set Dropdown3.options to null.
         if (Dropdown3.options !== null && Dropdown3.options.length === 0) {
             setDropdown3({
                 ...Dropdown3,
@@ -556,11 +551,12 @@ export default function SearchSection(props) {
 }
 
 
-// export async function getStaticProps() {
-//     const all_providers = await handler();
-//     return {
-//         props: {
-//             all_providers
-//         }
-//     }
-// }
+export async function getStaticProps() {
+    const res = await fetch('http://localhost:3000/functions/api/get_employees/');
+    const all_providers = await res.json();
+    return {
+        props: {
+            all_providers
+        }
+    }
+}
