@@ -458,23 +458,17 @@ export default function SearchSection(props) {
             selected_providers = search_for_terms(all_providers.non_surgical_orthopedist.providers, search_terms);
         } else if (Dropdown1.value === list_of_specialties[1]) {
             selected_providers = search_for_terms(all_providers.surgical_orthopedist.providers, search_terms);
-        }
-        else if (Dropdown1.value === list_of_specialties[2]) {
+        } else if (Dropdown1.value === list_of_specialties[2]) {
             selected_providers = search_for_terms(all_providers.non_surgical_spine.providers, search_terms);
-        }
-        else if (Dropdown1.value === list_of_specialties[3]) {
+        } else if (Dropdown1.value === list_of_specialties[3]) {
             selected_providers = search_for_terms(all_providers.surgical_spine.providers, search_terms);
-        }
-        else if (Dropdown1.value === list_of_specialties[4]) {
+        } else if (Dropdown1.value === list_of_specialties[4]) {
             selected_providers = search_for_terms(all_providers.non_surgical_cardiologist.providers, search_terms);
-        }
-        else if (Dropdown1.value === list_of_specialties[5]) {
+        } else if (Dropdown1.value === list_of_specialties[5]) {
             selected_providers = search_for_terms(all_providers.surgical_cardiologist.providers, search_terms);
-        }
-        else if (Dropdown1.value === list_of_specialties[6]) {
+        } else if (Dropdown1.value === list_of_specialties[6]) {
             selected_providers = search_for_terms(all_providers.physical_therapist.providers, search_terms);
-        }
-        else if (Dropdown1.value === list_of_specialties[7]) {
+        } else if (Dropdown1.value === list_of_specialties[7]) {
             selected_providers = search_for_terms(all_providers.occupational_therapist.providers, search_terms);
         }
         if (selected_providers.length === 0) {
@@ -488,15 +482,15 @@ export default function SearchSection(props) {
 
     //Create useEffect function to update DOM when SelectedProviders changes.
     useEffect(() => {
-        console.log(SelectedProviders);
-    }
-    , [SelectedProviders]);
+            console.log(SelectedProviders);
+        }
+        , [SelectedProviders]);
 
     // Create useEffect function to update DOM when SearchFoundNone changes.
     useEffect(() => {
-        console.log('SearchFoundNone:' + SearchFoundNone);
-    }
-    , [SearchFoundNone]);
+            console.log('SearchFoundNone:' + SearchFoundNone);
+        }
+        , [SearchFoundNone]);
 
     return (
         <section className="search-section">
@@ -533,10 +527,12 @@ export default function SearchSection(props) {
                                                            onChange={(value) => handleDropdownChange(value, "dropdown5")}
                                                            value={Dropdown5.value}/>
                                         <div className="col text-center">
-                                            <Button className="mt-4 btn btn-primary" size={"lg"} onClick={handleSearch}>Search</Button>
+                                            <Button className="mt-4 btn btn-primary" size={"lg"}
+                                                    onClick={handleSearch}>Search</Button>
                                         </div>
                                         <div className="col text-center">
-                                            <Button className="mb-2 mt-2 btn btn-secondary" size={"sm"} onClick={handleClear}>Clear</Button>
+                                            <Button className="mb-2 mt-2 btn btn-secondary" size={"sm"}
+                                                    onClick={handleClear}>Clear</Button>
                                         </div>
                                     </Col>
                                 </Row>
@@ -552,11 +548,22 @@ export default function SearchSection(props) {
 
 
 export async function getStaticProps() {
-    const res = await fetch('http://localhost:3000/pages/api/get_employees.js');
-    const all_providers = await res.json();
-    return {
-        props: {
-            all_providers
+    try {
+        const res = await fetch('http://localhost:3000/pages/api/get_employees.js');
+        const all_providers = await res.json();
+        return {
+            props: {
+                all_providers
+            }
+        }
+    } catch (error) {
+        console.log(error);
+        const res = await fetch('https://cloudflare_duly_directory.singulardavepratt.workers.dev/');
+        const all_providers = await res.json();
+        return {
+            props: {
+                all_providers
+            }
         }
     }
 }
