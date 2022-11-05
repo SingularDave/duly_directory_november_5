@@ -552,7 +552,7 @@ export default function SearchSection(props) {
 
 
 export async function getStaticProps() {
-    const res = await fetch('http://localhost:3000/functions/api/get_employees/');
+    const res = await fetch('http://localhost:3000/functions/api/get_employees.js');
     const all_providers = await res.json();
     return {
         props: {
