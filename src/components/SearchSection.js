@@ -1,13 +1,16 @@
-import React, {useEffect} from "react";
+import React, {useEffect, useState} from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import DropdownComponent from "components/DropDownComponent";
-import {useState} from "react";
 import Button from "react-bootstrap/Button";
 import EmployeeCard from "./EmployeeCard";
+import {all_providers} from "../pages/api/employees";
 
+export const config = {
+    runtime: 'experimental-edge',
+}
 
 export default function SearchSection(props) {
     const {all_providers} = props;
@@ -550,4 +553,12 @@ export default function SearchSection(props) {
             <EmployeeCard providers={SelectedProviders} SearchFoundNone={SearchFoundNone}/>
         </section>
     );
+}
+
+export async function getStaticProps() {
+    return {
+        props: {
+            all_providers: all_providers
+        }
+    }
 }
