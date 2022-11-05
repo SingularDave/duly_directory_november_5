@@ -6,7 +6,7 @@ import Card from "react-bootstrap/Card";
 import DropdownComponent from "components/DropDownComponent";
 import Button from "react-bootstrap/Button";
 import EmployeeCard from "./EmployeeCard";
-import {all_providers} from "../pages/api/employees";
+import handler from "../pages/api/get_employees";
 
 export const config = {
     runtime: 'experimental-edge',
@@ -555,10 +555,12 @@ export default function SearchSection(props) {
     );
 }
 
+
 export async function getStaticProps() {
+    const all_providers = await handler();
     return {
         props: {
-            all_providers: all_providers
+            all_providers
         }
     }
 }
