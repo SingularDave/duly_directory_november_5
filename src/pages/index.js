@@ -9,7 +9,7 @@ import Footer from "components/Footer";
 //create getStaticProps function to fetch data from API. Fetch data from handler function. It will return JSON data.
 // Turn JSON data into JavaScript object. Pass JavaScript object to IndexPage component as props.
 export async function getStaticProps() {
-    const res = await fetch('http://localhost:3000/api/get_employees');
+    const res = await fetch('https://duly-directory-worker.singulardavepratt.workers.dev/');
     const data = await res.json();
     return {
         props: {
