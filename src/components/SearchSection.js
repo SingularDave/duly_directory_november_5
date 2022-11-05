@@ -556,11 +556,11 @@ export default function SearchSection(props) {
 }
 
 
-export async function getStaticProps() {
-    const all_providers = await handler();
-    return {
-        props: {
-            all_providers
-        }
-    }
-}
+// export async function getStaticProps() {
+//     const all_providers = await handler();
+//     return {
+//         props: {
+//             all_providers
+//         }
+//     }
+// }
