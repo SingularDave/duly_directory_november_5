@@ -8,10 +8,15 @@ import Footer from "components/Footer";
 
 export async function getStaticProps() {
     const res = {animals: ['dog', 'cat', 'bird']};
-    return {
-        props: {
-            animals: res.animals
-        }
+    try {
+        return {
+            props: {
+                animals: res.animals
+            }
+        };
+    }
+    catch (err) {
+        console.log(err);
     }
 }
 
