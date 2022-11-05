@@ -9,6 +9,7 @@ import EmployeeCard from "./EmployeeCard";
 
 
 export default function SearchSection(props) {
+    console.log("SearchSection props: ", props);
     const {all_providers} = props;
     const {
         list_of_specialties
