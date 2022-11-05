@@ -677,13 +677,13 @@ const occupational_therapist = {
 const list_of_specialties = ['Non-surgical Orthopedics', 'Surgical Orthopedics', 'Non-surgical Spine Orthopedics', 'Surgical Spine Orthopedics', 'Non-surgical Cardiology', 'Surgical Cardiology', 'Physical Therapy', 'Occupational Therapy'];
 
 export const all_providers = {
-    non_surgical_orthopedist: non_surgical_orthopedist,
-    surgical_orthopedist: surgical_orthopedist,
-    non_surgical_spine: non_surgical_spine,
-    surgical_spine: surgical_spine,
-    non_surgical_cardiologist: non_surgical_cardiologist,
-    surgical_cardiologist: surgical_cardiologist,
-    physical_therapist: physical_therapist,
-    occupational_therapist: occupational_therapist,
-    list_of_specialties: list_of_specialties,
+    'non_surgical_orthopedist': non_surgical_orthopedist,
+    'surgical_orthopedist': surgical_orthopedist,
+    'non_surgical_spine': non_surgical_spine,
+    'surgical_spine': surgical_spine,
+    'non_surgical_cardiologist': non_surgical_cardiologist,
+    'surgical_cardiologist': surgical_cardiologist,
+    'physical_therapist': physical_therapist,
+    'occupational_therapist': occupational_therapist,
+    'list_of_specialties': list_of_specialties,
 };
