@@ -1,0 +1,1866 @@
+{
+  "data": [
+    {
+      "type": "instance",
+      "subtype": "app-instance",
+      "componentId": "app",
+      "id": 4012090,
+      "isVisible": true,
+      "children": []
+    }
+  ],
+  "components": [
+    {
+      "id": "app",
+      "type": "component",
+      "subtype": "app-component",
+      "globalStyle": "// COLORS\n$theme-colors: (\n  \"primary\": #0074d9,\n  \"secondary\": #33CCFF,\n  \"success\": #28a745,\n  \"danger\": #ff4136,\n  \"warning\": #ffc107,\n  \"info\": #17a2b8,\n  \"light\": #f8f9fa,\n  \"dark\": #343a40,\n  \"white\": #ffffff,\n  \"transparent\": transparent\n);\n\n// TEXT\n$font-family-sans-serif: \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n$font-family-serif: Georgia, \"Times New Roman\", Times, serif;\n$font-family-base: $font-family-sans-serif;\n$font-size-base: 1rem;\n\n// BREAKPOINTS\n$grid-breakpoints: (\n  xs: 0,\n  sm: 576px,\n  md: 768px,\n  lg: 992px,\n  xl: 1200px\n);\n\n// SEE DOCS FOR MORE:\n// https://bit.ly/2sgFMdb\n\n// IMPORT BOOTSTRAP\n@import \"~bootstrap/scss/bootstrap\";",
+      "isVisible": true,
+      "code": "",
+      "kit": null,
+      "muiTheme": "{\n\n}",
+      "children": [
+        {
+          "type": "instance",
+          "subtype": "page-instance",
+          "componentId": 8826617,
+          "id": 7223019,
+          "isVisible": true,
+          "children": []
+        },
+        {
+          "type": "instance",
+          "subtype": "page-instance",
+          "componentId": 1395580,
+          "id": 8448678,
+          "isVisible": true,
+          "children": []
+        },
+        {
+          "type": "instance",
+          "subtype": "page-instance",
+          "componentId": 2220152,
+          "id": 6580965,
+          "isVisible": true,
+          "children": []
+        }
+      ]
+    },
+    {
+      "type": "component",
+      "subtype": "external-component",
+      "name": "Nav",
+      "module": {
+        "moduleName": "react-bootstrap",
+        "modulePath": "react-bootstrap/Nav",
+        "default": "Nav"
+      },
+      "id": 8654202,
+      "isVisible": true,
+      "nameLibrary": "",
+      "description": "",
+      "tags": [],
+      "children": []
+    },
+    {
+      "type": "component",
+      "subtype": "external-component",
+      "name": "Navbar",
+      "module": {
+        "moduleName": "react-bootstrap",
+        "modulePath": "react-bootstrap/Navbar",
+        "default": "Navbar"
+      },
+      "id": 5692101,
+      "isVisible": true,
+      "nameLibrary": "",
+      "description": "",
+      "tags": [],
+      "children": []
+    },
+    {
+      "type": "component",
+      "subtype": "external-component",
+      "name": "Navbar.Brand",
+      "module": {
+        "moduleName": "react-bootstrap",
+        "modulePath": "react-bootstrap/Navbar",
+        "default": "Navbar"
+      },
+      "id": 3474382,
+      "isVisible": true,
+      "nameLibrary": "",
+      "description": "",
+      "tags": [],
+      "children": []
+    },
+    {
+      "type": "component",
+      "subtype": "external-component",
+      "name": "Navbar.Toggle",
+      "module": {
+        "moduleName": "react-bootstrap",
+        "modulePath": "react-bootstrap/Navbar",
+        "default": "Navbar"
+      },
+      "id": 7703235,
+      "isVisible": true,
+      "nameLibrary": "",
+      "description": "",
+      "tags": [],
+      "children": []
+    },
+    {
+      "type": "component",
+      "subtype": "external-component",
+      "name": "Navbar.Collapse",
+      "module": {
+        "moduleName": "react-bootstrap",
+        "modulePath": "react-bootstrap/Navbar",
+        "default": "Navbar"
+      },
+      "id": 1064541,
+      "isVisible": true,
+      "nameLibrary": "",
+      "description": "",
+      "tags": [],
+      "children": []
+    },
+    {
+      "type": "component",
+      "subtype": "external-component",
+      "name": "Container",
+      "module": {
+        "moduleName": "react-bootstrap",
+        "modulePath": "react-bootstrap/Container",
+        "default": "Container"
+      },
+      "id": 2178390,
+      "isVisible": true,
+      "nameLibrary": "",
+      "description": "",
+      "tags": [],
+      "children": []
+    },
+    {
+      "type": "component",
+      "name": "Navbar Custom",
+      "children": [
+        {
+          "type": "instance",
+          "subtype": "external-instance",
+          "componentId": 5692101,
+          "id": 2324630,
+          "attributes": "{\n\tbg: props.bg,\n  variant: props.variant,\n  expand: props.expand\n}",
+          "children": [
+            {
+              "type": "instance",
+              "subtype": "external-instance",
+              "componentId": 2178390,
+              "id": 8347900,
+              "attributes": "{\n\n}\t",
+              "children": [
+                {
+                  "type": "instance",
+                  "subtype": "external-instance",
+                  "componentId": 3474382,
+                  "id": 6482044,
+                  "attributes": "{\n\thref: \"/\"\n}",
+                  "children": [
+                    {
+                      "type": "element",
+                      "tagName": "img",
+                      "attributes": "{\n  src: props.logo,\n  alt: \"Logo\",\n  height: \"30\"\n}",
+                      "classNames": [
+                        "d-inline-block",
+                        "align-top"
+                      ],
+                      "id": 7888183,
+                      "isVisible": true,
+                      "image": "",
+                      "name": "",
+                      "classNameExpressions": [],
+                      "style": "",
+                      "children": []
+                    }
+                  ],
+                  "isVisible": true
+                },
+                {
+                  "type": "instance",
+                  "subtype": "external-instance",
+                  "componentId": 7703235,
+                  "id": 1950908,
+                  "attributes": "{\n\t'aria-controls': \"navbar-nav\",\n  className: \"border-0\"\n}",
+                  "isVisible": true,
+                  "children": []
+                },
+                {
+                  "type": "instance",
+                  "subtype": "external-instance",
+                  "componentId": 1064541,
+                  "id": 4345262,
+                  "attributes": "{\n\tid: \"navbar-nav\",\n  className: \"justify-content-end\"\n}",
+                  "children": [
+                    {
+                      "type": "instance",
+                      "subtype": "external-instance",
+                      "componentId": 8654202,
+                      "id": 2096175,
+                      "children": [],
+                      "isVisible": true,
+                      "attributes": "{\n\n}"
+                    }
+                  ],
+                  "isVisible": true
+                }
+              ],
+              "isVisible": true
+            }
+          ],
+          "isVisible": true
+        }
+      ],
+      "tags": [
+        "Navigation",
+        "not:saas",
+        "Popular"
+      ],
+      "id": 1272949,
+      "description": "Navbar with sign in",
+      "isVisible": true,
+      "nameLibrary": "",
+      "code": "",
+      "muiStyle": "{\n\n}"
+    },
+    {
+      "type": "component",
+      "name": "Section Header",
+      "children": [
+        {
+          "type": "element",
+          "tagName": "header",
+          "id": 4892904,
+          "classNameExpressions": [
+            {
+              "js": "props.className",
+              "classNames": [
+                "{props.className}"
+              ]
+            }
+          ],
+          "style": "// Add bottom margin if element below\n&:not(:last-child){\n\tmargin-bottom: 2rem;\n}",
+          "children": [
+            {
+              "type": "if",
+              "js": "props.title",
+              "id": 3051339,
+              "children": [
+                {
+                  "type": "element",
+                  "tagName": "h1",
+                  "children": [
+                    {
+                      "type": "text",
+                      "text": "{props.title}",
+                      "id": 3096491,
+                      "isVisible": true
+                    }
+                  ],
+                  "id": 68747,
+                  "classNames": [
+                    "font-weight-bold"
+                  ],
+                  "classNameExpressions": [
+                    {
+                      "js": "props.subtitle && props.spaced",
+                      "classNames": [
+                        "mb-4"
+                      ]
+                    },
+                    {
+                      "js": "!props.subtitle",
+                      "classNames": [
+                        "mb-0"
+                      ]
+                    },
+                    {
+                      "js": "props.size",
+                      "classNames": [
+                        "h{props.size}"
+                      ]
+                    }
+                  ],
+                  "name": "Title",
+                  "isVisible": true,
+                  "attributes": "{\n\n}",
+                  "image": "",
+                  "style": ""
+                }
+              ],
+              "isVisible": true
+            },
+            {
+              "type": "if",
+              "js": "props.subtitle",
+              "id": 7021426,
+              "children": [
+                {
+                  "type": "element",
+                  "tagName": "p",
+                  "id": 9013236,
+                  "children": [
+                    {
+                      "type": "text",
+                      "text": "{props.subtitle}",
+                      "id": 1531402,
+                      "isVisible": true
+                    }
+                  ],
+                  "name": "Subtitle",
+                  "style": "// Subtitle text generally isn't very long\n// so usually looks better to limit width.\nmax-width: 700px;\n// So we can have max-width but still\n// have alignment controlled by text-align.\ndisplay: inline-block;",
+                  "classNames": [
+                    "mb-0"
+                  ],
+                  "isVisible": true,
+                  "attributes": "{\n\n}",
+                  "image": "",
+                  "classNameExpressions": []
+                }
+              ],
+              "isVisible": true
+            }
+          ],
+          "isVisible": true,
+          "attributes": "{\n\n}",
+          "image": "",
+          "name": "",
+          "classNames": []
+        }
+      ],
+      "id": 5118913,
+      "code": "\t// Render nothing if no title or subtitle\n\tif (!props.title && !props.subtitle){\n    return null;\n  }\n",
+      "isVisible": true,
+      "nameLibrary": "",
+      "description": "",
+      "tags": [],
+      "muiStyle": "{\n\n}"
+    },
+    {
+      "type": "component",
+      "name": "Section",
+      "children": [
+        {
+          "type": "element",
+          "tagName": "section",
+          "id": 6386747,
+          "attributes": "{\n\t...otherProps\n}",
+          "classNames": [
+            "py-5",
+            "position-relative"
+          ],
+          "classNameExpressions": [
+            {
+              "js": "props.bg",
+              "classNames": [
+                "bg-{props.bg}"
+              ]
+            },
+            {
+              "js": "props.textColor",
+              "classNames": [
+                "text-{props.textColor}"
+              ]
+            },
+            {
+              "js": "className",
+              "classNames": [
+                "{className}"
+              ]
+            }
+          ],
+          "style": "// Ensure container is above bgImage\n.container {\n  position: relative;\n}\n\n// Add light border if two white\n// sections next to each other.\n.bg-white + &.bg-white {\n  border-top: 1px solid #F0F0F0;\n}",
+          "children": [
+            {
+              "type": "if",
+              "js": "bgImage",
+              "id": 5756517,
+              "children": [
+                {
+                  "type": "instance",
+                  "componentId": 1986700,
+                  "attributes": "{\n\timage: bgImage,\n  opacity: bgImageOpacity,\n  repeat: bgImageRepeat\n}",
+                  "id": 4826940,
+                  "isVisible": true,
+                  "children": []
+                }
+              ],
+              "isVisible": true
+            },
+            {
+              "type": "element",
+              "tagName": "div",
+              "id": 9929135,
+              "children": [
+                {
+                  "type": "children",
+                  "id": 7508953,
+                  "isVisible": true
+                }
+              ],
+              "classNameExpressions": [
+                {
+                  "js": "[\"md\", \"lg\"].includes(props.size)",
+                  "classNames": [
+                    "py-md-5"
+                  ]
+                },
+                {
+                  "js": "props.size === \"lg\"",
+                  "classNames": [
+                    "my-md-5"
+                  ]
+                }
+              ],
+              "isVisible": true,
+              "attributes": "{\n\n}",
+              "image": "",
+              "name": "",
+              "classNames": [],
+              "style": ""
+            }
+          ],
+          "isVisible": true,
+          "image": "",
+          "name": ""
+        }
+      ],
+      "id": 1219852,
+      "code": "\tconst {\n    bg, \n    textColor, \n    bgImage,\n    bgImageOpacity,\n    bgImageRepeat,\n    className,\n    children,\n    ...otherProps \n  } = props;\n",
+      "isVisible": true,
+      "nameLibrary": "",
+      "description": "",
+      "tags": [],
+      "muiStyle": "{\n\n}"
+    },
+    {
+      "type": "component",
+      "name": "Background Image",
+      "id": 1986700,
+      "children": [
+        {
+          "type": "element",
+          "tagName": "div",
+          "attributes": "{\n  style: {\n    '--image': `url(${props.image})`,\n    '--opacity': props.opacity\n  }\n}",
+          "style": "// Set using CSS vars defined\n// in element inline style.\nbackground-image: var(--image);\nopacity: var(--opacity);\n// Fill parent container\nbackground-position: center center;\nbackground-size: cover;\ntop: 0;\nleft: 0;\nbottom: 0;\nright: 0;\nposition: absolute;\n// Place under other elements\nz-index: 0;\n\n// Make it a repeating pattern\n&.repeat {\n  background-size: auto;\n  background-position: 0% 0%;\n  background-repeat: true;\n}",
+          "id": 3881161,
+          "classNameExpressions": [
+            {
+              "js": "props.repeat",
+              "classNames": [
+                "repeat"
+              ]
+            }
+          ],
+          "isVisible": true,
+          "image": "",
+          "name": "",
+          "classNames": [],
+          "children": []
+        }
+      ],
+      "isVisible": true,
+      "nameLibrary": "",
+      "description": "",
+      "tags": [],
+      "code": "",
+      "muiStyle": "{\n\n}"
+    },
+    {
+      "type": "component",
+      "subtype": "external-component",
+      "name": "Row",
+      "module": {
+        "moduleName": "react-bootstrap",
+        "modulePath": "react-bootstrap/Row",
+        "default": "Row"
+      },
+      "id": 9541476,
+      "isVisible": true,
+      "nameLibrary": "",
+      "description": "",
+      "tags": [],
+      "children": []
+    },
+    {
+      "type": "component",
+      "subtype": "external-component",
+      "name": "Col",
+      "module": {
+        "moduleName": "react-bootstrap",
+        "modulePath": "react-bootstrap/Col",
+        "default": "Col"
+      },
+      "id": 9152506,
+      "isVisible": true,
+      "nameLibrary": "",
+      "description": "",
+      "tags": [],
+      "children": []
+    },
+    {
+      "type": "component",
+      "subtype": "external-component",
+      "name": "Image",
+      "module": {
+        "moduleName": "react-bootstrap",
+        "modulePath": "react-bootstrap/Image",
+        "default": "Image"
+      },
+      "id": 4825682,
+      "isVisible": true,
+      "nameLibrary": "",
+      "description": "",
+      "tags": [],
+      "children": []
+    },
+    {
+      "type": "component",
+      "name": "Hero Section",
+      "children": [
+        {
+          "type": "instance",
+          "componentId": 1219852,
+          "id": 355828,
+          "attributes": "{\n\tbg: props.bg,\n  textColor: props.textColor,\n  size: props.size,\n  bgImage: props.bgImage,\n  bgImageOpacity: props.bgImageOpacity\n}",
+          "children": [
+            {
+              "type": "instance",
+              "subtype": "external-instance",
+              "componentId": 2178390,
+              "id": 2596949,
+              "attributes": "{\n\n}\t",
+              "children": [
+                {
+                  "type": "instance",
+                  "subtype": "external-instance",
+                  "componentId": 9541476,
+                  "id": 8109281,
+                  "attributes": "{\n\tclassName: \"align-items-center\"\n}\t",
+                  "children": [
+                    {
+                      "type": "instance",
+                      "subtype": "external-instance",
+                      "componentId": 9152506,
+                      "id": 6521773,
+                      "attributes": "{\n\tlg: 5,\n  className: \"text-center text-lg-left\"\n}\t",
+                      "children": [
+                        {
+                          "type": "instance",
+                          "componentId": 5118913,
+                          "id": 1167457,
+                          "attributes": "{\n\ttitle: props.title,\n  subtitle: props.subtitle,\n  // Text size (1-5)\n  size: 1,\n  // Space between title/subtitle\n  spaced: true\n}",
+                          "isVisible": true,
+                          "children": []
+                        }
+                      ],
+                      "isVisible": true
+                    },
+                    {
+                      "type": "instance",
+                      "subtype": "external-instance",
+                      "componentId": 9152506,
+                      "id": 3014917,
+                      "attributes": "{\n\tclassName: \"offset-lg-1 mt-5 mt-lg-0 \"\n}\t",
+                      "children": [
+                        {
+                          "type": "element",
+                          "tagName": "figure",
+                          "id": 2537181,
+                          "classNames": [
+                            "mx-auto"
+                          ],
+                          "style": "max-width: 570px;",
+                          "children": [
+                            {
+                              "type": "instance",
+                              "subtype": "external-instance",
+                              "componentId": 4825682,
+                              "id": 9836541,
+                              "attributes": "{\n\tsrc: props.image,\n  fluid: true\n}",
+                              "isVisible": true,
+                              "children": []
+                            }
+                          ],
+                          "name": "Image Container",
+                          "isVisible": true,
+                          "attributes": "{\n\n}",
+                          "image": "",
+                          "classNameExpressions": []
+                        }
+                      ],
+                      "isVisible": true
+                    }
+                  ],
+                  "isVisible": true
+                }
+              ],
+              "isVisible": true
+            }
+          ],
+          "isVisible": true
+        }
+      ],
+      "id": 1952882,
+      "tags": [
+        "Hero",
+        "Popular"
+      ],
+      "description": "Hero with image on right",
+      "isVisible": true,
+      "nameLibrary": "",
+      "code": "",
+      "muiStyle": "{\n\n}"
+    },
+    {
+      "type": "component",
+      "name": "Stats Section",
+      "children": [
+        {
+          "type": "instance",
+          "componentId": 1219852,
+          "id": 5322916,
+          "attributes": "{\n\tbg: props.bg,\n  textColor: props.textColor,\n  size: props.size,\n  bgImage: props.bgImage,\n  bgImageOpacity: props.bgImageOpacity\n}",
+          "children": [
+            {
+              "type": "instance",
+              "subtype": "external-instance",
+              "componentId": 2178390,
+              "id": 7041020,
+              "attributes": "{\n\tclassName: \"text-center\"\n}\t",
+              "children": [
+                {
+                  "type": "instance",
+                  "subtype": "external-instance",
+                  "componentId": 9541476,
+                  "id": 5803651,
+                  "attributes": "{\n\tclassName: \"justify-content-center\"\n}\t",
+                  "children": [
+                    {
+                      "type": "foreach",
+                      "valName": "item",
+                      "indexName": "index",
+                      "objectName": "items",
+                      "children": [
+                        {
+                          "type": "instance",
+                          "subtype": "external-instance",
+                          "componentId": 9152506,
+                          "id": 9481338,
+                          "attributes": "{\n  xs: 12,\n  md: 3,\n  className: \"py-3 px-4\",\n  key: index\n}\t",
+                          "children": [
+                            {
+                              "type": "element",
+                              "tagName": "div",
+                              "children": [
+                                {
+                                  "type": "element",
+                                  "tagName": "small",
+                                  "classNames": [
+                                    "text-uppercase"
+                                  ],
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "text": "{item.title}",
+                                      "id": 5943643,
+                                      "isVisible": true
+                                    }
+                                  ],
+                                  "id": 8101159,
+                                  "isVisible": true,
+                                  "attributes": "{\n\n}",
+                                  "image": "",
+                                  "name": "",
+                                  "classNameExpressions": [],
+                                  "style": ""
+                                },
+                                {
+                                  "type": "element",
+                                  "tagName": "h2",
+                                  "children": [
+                                    {
+                                      "type": "text",
+                                      "text": "{item.stat}",
+                                      "id": 9863644,
+                                      "isVisible": true
+                                    }
+                                  ],
+                                  "id": 3862706,
+                                  "classNames": [
+                                    "mt-2"
+                                  ],
+                                  "isVisible": true,
+                                  "attributes": "{\n\n}",
+                                  "image": "",
+                                  "name": "",
+                                  "classNameExpressions": [],
+                                  "style": ""
+                                }
+                              ],
+                              "id": 9140050,
+                              "isVisible": true,
+                              "attributes": "{\n\n}",
+                              "image": "",
+                              "name": "",
+                              "classNames": [],
+                              "classNameExpressions": [],
+                              "style": ""
+                            }
+                          ],
+                          "isVisible": true
+                        }
+                      ],
+                      "id": 4451578,
+                      "isVisible": true,
+                      "objectType": "array"
+                    }
+                  ],
+                  "isVisible": true
+                }
+              ],
+              "isVisible": true
+            }
+          ],
+          "isVisible": true
+        }
+      ],
+      "id": 2888437,
+      "tags": [
+        "Stats",
+        "Popular"
+      ],
+      "code": "\tconst items = [\n    {\n    \ttitle: \"Providers in Database\",\n    \tstat: \"35\"\n    }\n  ];\n",
+      "description": "Stats row with numbers",
+      "isVisible": true,
+      "nameLibrary": "",
+      "muiStyle": "{\n\n}"
+    },
+    {
+      "type": "component",
+      "id": 4644163,
+      "name": "Footer",
+      "children": [
+        {
+          "type": "instance",
+          "componentId": 1219852,
+          "id": 5496536,
+          "attributes": "{\n\tbg: props.bg,\n  textColor: props.textColor,\n  size: props.size,\n  bgImage: props.bgImage,\n  bgImageOpacity: props.bgImageOpacity,\n  className: \"footer\"\n}",
+          "children": [
+            {
+              "type": "instance",
+              "subtype": "external-instance",
+              "componentId": 2178390,
+              "id": 2857930,
+              "attributes": "{\n\n}\t",
+              "children": [
+                {
+                  "type": "element",
+                  "tagName": "div",
+                  "children": [
+                    {
+                      "type": "element",
+                      "tagName": "div",
+                      "classNames": [
+                        "brand",
+                        "left"
+                      ],
+                      "children": [
+                        {
+                          "type": "element",
+                          "tagName": "a",
+                          "attributes": "{\n  href: '/' \n}",
+                          "children": [
+                            {
+                              "type": "element",
+                              "tagName": "img",
+                              "attributes": "{\n  src: props.logo,\n  alt: \"Logo\"\n}",
+                              "id": 4140551,
+                              "isVisible": true,
+                              "image": "",
+                              "name": "",
+                              "classNames": [],
+                              "classNameExpressions": [],
+                              "style": "",
+                              "children": []
+                            }
+                          ],
+                          "id": 4960806,
+                          "isVisible": true,
+                          "image": "",
+                          "name": "",
+                          "classNames": [],
+                          "classNameExpressions": [],
+                          "style": ""
+                        }
+                      ],
+                      "id": 4694183,
+                      "isVisible": true,
+                      "attributes": "{\n\n}",
+                      "image": "",
+                      "name": "",
+                      "classNameExpressions": [],
+                      "style": ""
+                    },
+                    {
+                      "type": "element",
+                      "tagName": "div",
+                      "classNames": [
+                        "links",
+                        "right"
+                      ],
+                      "children": [
+                        {
+                          "type": "element",
+                          "tagName": "a",
+                          "children": [
+                            {
+                              "type": "text",
+                              "text": "FAQ",
+                              "id": 3244183,
+                              "isVisible": true
+                            }
+                          ],
+                          "attributes": "{\n\thref: '/faq',\n}",
+                          "id": 6446098,
+                          "isVisible": true,
+                          "image": "",
+                          "name": "",
+                          "classNames": [],
+                          "classNameExpressions": [],
+                          "style": ""
+                        }
+                      ],
+                      "id": 8371540,
+                      "isVisible": true,
+                      "attributes": "{\n\n}",
+                      "image": "",
+                      "name": "",
+                      "classNameExpressions": [],
+                      "style": ""
+                    },
+                    {
+                      "type": "element",
+                      "tagName": "div",
+                      "classNames": [
+                        "social",
+                        "right"
+                      ],
+                      "children": [],
+                      "id": 3810280,
+                      "isVisible": true,
+                      "attributes": "{\n\n}",
+                      "image": "",
+                      "name": "",
+                      "classNameExpressions": [],
+                      "style": ""
+                    },
+                    {
+                      "type": "element",
+                      "tagName": "div",
+                      "classNames": [
+                        "copyright",
+                        "left"
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "text": "{props.copyright}",
+                          "id": 3238124,
+                          "isVisible": true
+                        },
+                        {
+                          "type": "element",
+                          "tagName": "a",
+                          "attributes": "{\n  href: \"/legal/terms-of-service\", \n}",
+                          "children": [
+                            {
+                              "type": "text",
+                              "text": "Terms",
+                              "id": 2646122,
+                              "isVisible": true
+                            }
+                          ],
+                          "id": 3166061,
+                          "isVisible": true,
+                          "image": "",
+                          "name": "",
+                          "classNames": [],
+                          "classNameExpressions": [],
+                          "style": ""
+                        }
+                      ],
+                      "id": 1476061,
+                      "isVisible": true,
+                      "attributes": "{\n\n}",
+                      "image": "",
+                      "name": "",
+                      "classNameExpressions": [],
+                      "style": ""
+                    }
+                  ],
+                  "style": "display: flex;\nflex-wrap: wrap;\n> div {\n  display: flex;\n  flex: none;\n  justify-content: center;\n  width: 100%;\n  margin-bottom: 24px;\n}\n\n.brand {\n  img {\n    display: block;\n    height: 32px;\n  }\n}\n\n.social, .links {\n  a {\n    color: inherit;\n    &:not(:last-of-type) {\n      margin-right: 1rem;\n    }\n  }\n}\n\n.social {\n  align-items: flex-end;\n}\n\n.copyright {\n  font-size: 0.9rem;\n  opacity: 0.6;\n\n  a {\n    color: inherit;\n    margin-left: 0.8rem;\n\t}\n}\n\n// Tablet and up\n@media screen and (min-width: 768px) {\n  > div {\n    flex: 50%;\n  }\n\n  .left {\n    justify-content: flex-start;\n  }\n\n  .right {\n    justify-content: flex-end;\n  }\n  \n  // Move links to end (bottom right)\n  // Swaps position with social\n  .links {\n    order: 1;\n  }\n}",
+                  "id": 9137580,
+                  "name": "Inner",
+                  "isVisible": true,
+                  "attributes": "{\n\n}",
+                  "image": "",
+                  "classNames": [],
+                  "classNameExpressions": []
+                }
+              ],
+              "isVisible": true
+            }
+          ],
+          "isVisible": true
+        }
+      ],
+      "tags": [
+        "Footer",
+        "Popular"
+      ],
+      "description": "Footer with row of links",
+      "isVisible": true,
+      "nameLibrary": "",
+      "code": "",
+      "muiStyle": "{\n\n}"
+    },
+    {
+      "type": "component",
+      "subtype": "page-component",
+      "path": "",
+      "children": [
+        {
+          "type": "instance",
+          "componentId": 1272949,
+          "id": 5410920,
+          "attributes": "{\n  // Background color\n  // primary, secondary, success, danger,\n  // warning, info, white, light, dark\n  bg: \"white\",\n  // light, dark\n  variant: \"light\",\n  // Collapse at breakpoint\n  // sm, md, lg\n  expand: \"md\",\n\t// Logo image url\n  logo: \"https://imagedelivery.net/68SN6RDwKYb315QTtTsC9w/1ceef14c-fd53-4b76-6152-890ad4652b00/public\"\n}",
+          "isVisible": true,
+          "children": [],
+          "libraryName": "Navbar Custom"
+        },
+        {
+          "type": "instance",
+          "componentId": 1952882,
+          "id": 7568439,
+          "attributes": "{\n  // Background and text color\n  // primary, secondary, success, danger,\n  // warning, info, white, light, dark\n  bg: \"white\",\n  textColor: \"white\",\n  // sm, md, lg\n  size: \"md\",\n  // Background image URL\n  bgImage: \"https://imagedelivery.net/68SN6RDwKYb315QTtTsC9w/7f633975-86c0-45ac-bd77-3979bb2a4d00/ScaleDown\",\n  // Background image opacity (0-1)\n  bgImageOpacity: 1,\n\t// Text content\n  title: \"Provider Directory\",\n  subtitle: \"\",\n  // Image\n  image: \"https://imagedelivery.net/68SN6RDwKYb315QTtTsC9w/733ebe6c-a6d2-4129-58e4-c2da62fccb00/ScaleDown\",\n  // primary, secondary, success, danger,\n  // warning, info, light, dark\n}",
+          "isVisible": true,
+          "children": [],
+          "libraryName": "Hero Section"
+        },
+        {
+          "type": "instance",
+          "componentId": 2888437,
+          "id": 2911611,
+          "attributes": "{\n  // Background and text color\n  // primary, secondary, success, danger,\n  // warning, info, white, light, dark\n  bg: \"light\",\n  textColor: \"dark\",\n  // sm, md, lg\n  size: \"md\",\n  // Background image URL\n  bgImage: \"\",\n  // Background image opacity (0-1)\n  bgImageOpacity: 1,\n\t// Stats data is in the \"code\" section below\n}",
+          "isVisible": true,
+          "children": [],
+          "libraryName": "Stats Section"
+        },
+        {
+          "type": "instance",
+          "componentId": 4644163,
+          "id": 9828139,
+          "attributes": "{\n  // Background and text color\n  // primary, secondary, success, danger,\n  // warning, info, white, light, dark\n  bg: \"secondary\",\n  textColor: \"dark\",\n  // sm, md, lg\n  size: \"md\",\n  // Background image URL\n  bgImage: \"\",\n  // Background image opacity (0-1)\n  bgImageOpacity: 1,\n\t// Copyright text\n  copyright: `© ${new Date().getFullYear()} Duly Health and Care`,\n  // Logo image URL\n  logo: 'https://imagedelivery.net/68SN6RDwKYb315QTtTsC9w/c2ec9ec3-bd8f-4c0f-8705-1459b2f1ac00/public',\n}",
+          "isVisible": true,
+          "children": [],
+          "libraryName": "Footer"
+        }
+      ],
+      "id": 8826617,
+      "isVisible": true,
+      "code": "",
+      "description": "",
+      "requireAuth": false
+    },
+    {
+      "type": "component",
+      "subtype": "page-component",
+      "path": "faq",
+      "id": 1395580,
+      "isVisible": true,
+      "code": "",
+      "description": "",
+      "requireAuth": false,
+      "children": [
+        {
+          "type": "instance",
+          "componentId": 1272949,
+          "id": 8701825,
+          "attributes": "{\n  // Background color\n  // primary, secondary, success, danger,\n  // warning, info, white, light, dark\n  bg: \"white\",\n  // light, dark\n  variant: \"light\",\n  // Collapse at breakpoint\n  // sm, md, lg\n  expand: \"md\",\n\t// Logo image url\n  logo: \"https://imagedelivery.net/68SN6RDwKYb315QTtTsC9w/1ceef14c-fd53-4b76-6152-890ad4652b00/public\"\n}",
+          "isVisible": true,
+          "children": [],
+          "libraryName": "Navbar Custom"
+        },
+        {
+          "type": "instance",
+          "componentId": 3246815,
+          "id": 1818444,
+          "attributes": "{\n  // Background and text color\n  // primary, secondary, success, danger,\n  // warning, info, white, light, dark\n  bg: \"white\",\n  textColor: \"dark\",\n  // sm, md, lg\n  size: \"md\",\n  // Background image URL\n  bgImage: \"\",\n  // Background image opacity (0-1)\n  bgImageOpacity: 1,\n\t// Text content\n  title: \"Frequently Asked Questions\",\n  subtitle: \"\",\n  // FAQ data is in the \"code\" section below\n}",
+          "isVisible": true,
+          "children": [],
+          "libraryName": "FAQ Section"
+        },
+        {
+          "type": "instance",
+          "componentId": 4644163,
+          "id": 6133454,
+          "attributes": "{\n  // Background and text color\n  // primary, secondary, success, danger,\n  // warning, info, white, light, dark\n  bg: \"secondary\",\n  textColor: \"dark\",\n  // sm, md, lg\n  size: \"md\",\n  // Background image URL\n  bgImage: \"\",\n  // Background image opacity (0-1)\n  bgImageOpacity: 1,\n\t// Copyright text\n  copyright: `© ${new Date().getFullYear()} Duly Health and Care`,\n  // Logo image URL\n  logo: 'https://imagedelivery.net/68SN6RDwKYb315QTtTsC9w/c2ec9ec3-bd8f-4c0f-8705-1459b2f1ac00/public',\n}",
+          "isVisible": true,
+          "children": [],
+          "libraryName": "Footer"
+        }
+      ]
+    },
+    {
+      "type": "component",
+      "name": "FAQ Section",
+      "children": [
+        {
+          "type": "instance",
+          "componentId": 1219852,
+          "id": 804648,
+          "attributes": "{\n\tbg: props.bg,\n  textColor: props.textColor,\n  size: props.size,\n  bgImage: props.bgImage,\n  bgImageOpacity: props.bgImageOpacity\n}",
+          "children": [
+            {
+              "type": "instance",
+              "subtype": "external-instance",
+              "componentId": 2178390,
+              "id": 6565742,
+              "attributes": "{\n\n}\t",
+              "children": [
+                {
+                  "type": "instance",
+                  "componentId": 5118913,
+                  "id": 8325169,
+                  "attributes": "{\n\ttitle: props.title,\n  subtitle: props.subtitle,\n  // Text size (1-5)\n  size: 2,\n  // Space between title/subtitle\n  spaced: true,\n\tclassName: \"text-center\"\n}",
+                  "isVisible": true,
+                  "children": []
+                },
+                {
+                  "type": "foreach",
+                  "valName": "item",
+                  "objectName": "items",
+                  "children": [
+                    {
+                      "type": "element",
+                      "tagName": "article",
+                      "attributes": "{\n\tonClick: () => {\n    setExpandedItem(index, !expanded[index]);\n  },\n  key: index,\n}",
+                      "style": "cursor: pointer;\nborder-bottom: 1px solid #efefef;\n&:last-child { \n  border-bottom: none; \n}",
+                      "children": [
+                        {
+                          "type": "element",
+                          "tagName": "h4",
+                          "children": [
+                            {
+                              "type": "element",
+                              "tagName": "span",
+                              "classNames": [
+                                "text-primary",
+                                "mr-3"
+                              ],
+                              "children": [
+                                {
+                                  "type": "element",
+                                  "tagName": "i",
+                                  "classNames": [
+                                    "fas"
+                                  ],
+                                  "classNameExpressions": [
+                                    {
+                                      "js": "expanded[index]",
+                                      "classNames": [
+                                        "fa-minus"
+                                      ]
+                                    },
+                                    {
+                                      "js": "!expanded[index]",
+                                      "classNames": [
+                                        "fa-plus"
+                                      ]
+                                    }
+                                  ],
+                                  "id": 6440995,
+                                  "isVisible": true,
+                                  "attributes": "{\n\n}",
+                                  "image": "",
+                                  "name": "",
+                                  "style": "",
+                                  "children": []
+                                }
+                              ],
+                              "id": 3354319,
+                              "isVisible": true,
+                              "attributes": "{\n\n}",
+                              "image": "",
+                              "name": "",
+                              "classNameExpressions": [],
+                              "style": ""
+                            },
+                            {
+                              "type": "text",
+                              "text": "{item.question}",
+                              "id": 7228778,
+                              "isVisible": true
+                            }
+                          ],
+                          "id": 6960241,
+                          "isVisible": true,
+                          "attributes": "{\n\n}",
+                          "image": "",
+                          "name": "",
+                          "classNames": [],
+                          "classNameExpressions": [],
+                          "style": ""
+                        },
+                        {
+                          "type": "if",
+                          "js": "expanded[index]",
+                          "children": [
+                            {
+                              "type": "element",
+                              "tagName": "div",
+                              "classNames": [
+                                "mt-3"
+                              ],
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "text": "{item.answer}",
+                                  "id": 5789270,
+                                  "isVisible": true
+                                }
+                              ],
+                              "id": 5790683,
+                              "isVisible": true,
+                              "attributes": "{\n\n}",
+                              "image": "",
+                              "name": "",
+                              "classNameExpressions": [],
+                              "style": ""
+                            }
+                          ],
+                          "id": 2390207,
+                          "isVisible": true
+                        }
+                      ],
+                      "id": 8652269,
+                      "classNames": [
+                        "py-4"
+                      ],
+                      "name": "FAQ Item",
+                      "isVisible": true,
+                      "image": "",
+                      "classNameExpressions": []
+                    }
+                  ],
+                  "id": 4326310,
+                  "indexName": "index",
+                  "isVisible": true,
+                  "objectType": "array"
+                }
+              ],
+              "isVisible": true
+            }
+          ],
+          "isVisible": true
+        }
+      ],
+      "id": 3246815,
+      "tags": [
+        "FAQ",
+        "Popular"
+      ],
+      "code": "\t// Object to store expanded state for all items\n\tconst [expanded, setExpanded] = useState({});\n\t// Set an item's expanded state\n\tconst setExpandedItem = (index, isExpanded) => {\n    setExpanded({\n      ...expanded,\n      [index]: isExpanded,\n    })\n  }\n\n\tconst items = [\n    {\n      question: 'Why do only a few providers exist in this application?',\n      answer: 'This is just a prototype.'\n    },\n    {\n      question: 'Why is the application so basic?',\n      answer: 'It is a prototype. Also, a PT made it, so ...¯|_(ツ)_/¯ '\n    },\n    {\n      question: 'Is this application mobile compatible?',\n      answer: 'Yes, but it is not specifically a mobile application. It could be used on a mobile device, but it is not optimized for mobile. A mobile application could be built using the same backend and UI, but it would require many more steps.'\n    }\n  ];\n",
+      "description": "FAQ with expandable items",
+      "isVisible": true,
+      "nameLibrary": "",
+      "muiStyle": "{\n\n}"
+    },
+    {
+      "type": "component",
+      "subtype": "page-component",
+      "path": "legal/terms-of-service",
+      "id": 2220152,
+      "isVisible": true,
+      "code": "",
+      "description": "",
+      "requireAuth": false,
+      "children": [
+        {
+          "type": "instance",
+          "componentId": 1272949,
+          "id": 9260255,
+          "attributes": "{\n  // Background color\n  // primary, secondary, success, danger,\n  // warning, info, white, light, dark\n  bg: \"white\",\n  // light, dark\n  variant: \"light\",\n  // Collapse at breakpoint\n  // sm, md, lg\n  expand: \"md\",\n\t// Logo image url\n  logo: \"https://imagedelivery.net/68SN6RDwKYb315QTtTsC9w/1ceef14c-fd53-4b76-6152-890ad4652b00/public\"\n}",
+          "isVisible": true,
+          "children": [],
+          "libraryName": "Navbar Custom"
+        },
+        {
+          "type": "instance",
+          "componentId": 2899003,
+          "id": 8900340,
+          "attributes": "{\n  // Background and text color\n  // primary, secondary, success, danger,\n  // warning, info, white, light, dark\n  bg: \"white\",\n  textColor: \"dark\",\n  // sm, md, lg\n  size: \"sm\",\n  // Background image URL\n  bgImage: \"\",\n  // Background image opacity (0-1)\n  bgImageOpacity: 1,\n\t// Active section (terms-of-service, privacy-policy)\n  section: \"terms-of-service\",\n\t// Add key so state resets when section changes\n  key: \"terms-of-service\",\n}",
+          "isVisible": true,
+          "children": [],
+          "libraryName": "Legal Section"
+        },
+        {
+          "type": "instance",
+          "componentId": 4644163,
+          "id": 4489941,
+          "attributes": "{\n  // Background and text color\n  // primary, secondary, success, danger,\n  // warning, info, white, light, dark\n  bg: \"secondary\",\n  textColor: \"dark\",\n  // sm, md, lg\n  size: \"md\",\n  // Background image URL\n  bgImage: \"\",\n  // Background image opacity (0-1)\n  bgImageOpacity: 1,\n\t// Copyright text\n  copyright: `© ${new Date().getFullYear()} Duly Health and Care`,\n  // Logo image URL\n  logo: 'https://imagedelivery.net/68SN6RDwKYb315QTtTsC9w/c2ec9ec3-bd8f-4c0f-8705-1459b2f1ac00/public',\n}",
+          "isVisible": true,
+          "children": [],
+          "libraryName": "Footer"
+        }
+      ]
+    },
+    {
+      "type": "component",
+      "id": 2899003,
+      "name": "Legal Section",
+      "code": "  const validSections = {\n    \"terms-of-service\": true,\n    \"privacy-policy\": true,\n  };\n\n  const section = validSections[props.section] \n  \t? props.section \n  \t: \"terms-of-service\";\n\n\tconst data = {\n    domain: \"company.com\",\n    companyName: \"Company\",\n  }\n",
+      "children": [
+        {
+          "type": "instance",
+          "componentId": 1219852,
+          "id": 5694766,
+          "attributes": "{\n\tbg: props.bg,\n  textColor: props.textColor,\n  size: props.size,\n  bgImage: props.bgImage,\n  bgImageOpacity: props.bgImageOpacity\n}",
+          "children": [
+            {
+              "type": "instance",
+              "subtype": "external-instance",
+              "componentId": 2178390,
+              "id": 978480,
+              "attributes": "{\n  className: \"mt-5\",\n}\t",
+              "children": [
+                {
+                  "type": "if",
+                  "js": "section === \"terms-of-service\"",
+                  "id": 1633846,
+                  "children": [
+                    {
+                      "type": "instance",
+                      "componentId": 573139,
+                      "id": 5401813,
+                      "attributes": "{\n\t...data,\n}",
+                      "isVisible": true,
+                      "children": []
+                    }
+                  ],
+                  "isVisible": true
+                },
+                {
+                  "type": "if",
+                  "js": "section === \"privacy-policy\"",
+                  "id": 6388618,
+                  "children": [
+                    {
+                      "type": "instance",
+                      "componentId": 4078787,
+                      "id": 149138,
+                      "attributes": "{\n\t...data,\n}",
+                      "isVisible": true,
+                      "children": []
+                    }
+                  ],
+                  "isVisible": true
+                }
+              ],
+              "isVisible": true
+            }
+          ],
+          "isVisible": true
+        }
+      ],
+      "tags": [
+        "Content"
+      ],
+      "description": "Terms of Service",
+      "isVisible": true,
+      "nameLibrary": "",
+      "muiStyle": "{\n\n}"
+    },
+    {
+      "type": "component",
+      "name": "LegalTerms",
+      "children": [
+        {
+          "type": "instance",
+          "componentId": 4995083,
+          "id": 7141259,
+          "children": [
+            {
+              "type": "element",
+              "tagName": "h1",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Terms of Service",
+                  "id": 7082272,
+                  "isVisible": true
+                }
+              ],
+              "id": 58054,
+              "isVisible": true,
+              "attributes": "{\n\n}",
+              "image": "",
+              "name": "",
+              "classNames": [],
+              "classNameExpressions": [],
+              "style": ""
+            },
+            {
+              "type": "element",
+              "tagName": "p",
+              "id": 8027363,
+              "children": [
+                {
+                  "type": "text",
+                  "text": "This document is a placeholder. You should replace this with your own Terms of Service or create one using&nbsp;\n<a href=\"https://avodocs.com\" target=\"_blank\" rel=\"noreferrer\">avodocs.com</a>,&nbsp;\n<a href=\"https://getterms.io\" target=\"_blank\" rel=\"noreferrer\">getterms.io</a> or&nbsp;\n<a href=\"https://termly.io\" target=\"_blank\" rel=\"noreferrer\">termly.io</a>. We've included some example HTML structure below to make adding your content easier ↴",
+                  "id": 6596957,
+                  "isVisible": true
+                }
+              ],
+              "isVisible": true,
+              "attributes": "{\n\n}",
+              "image": "",
+              "name": "",
+              "classNames": [],
+              "classNameExpressions": [],
+              "style": ""
+            },
+            {
+              "type": "element",
+              "tagName": "p",
+              "id": 6431204,
+              "children": [
+                {
+                  "type": "text",
+                  "text": "These Terms of Service govern your use of {props.domain} and any related services provided by {props.companyName}. By accessing {props.domain}, you agree to abide by these Terms of Service and to comply with all applicable laws and regulations.",
+                  "id": 676194,
+                  "isVisible": true
+                }
+              ],
+              "isVisible": true,
+              "attributes": "{\n\n}",
+              "image": "",
+              "name": "",
+              "classNames": [],
+              "classNameExpressions": [],
+              "style": ""
+            },
+            {
+              "type": "element",
+              "tagName": "p",
+              "id": 3857788,
+              "children": [
+                {
+                  "type": "text",
+                  "text": "If you do not agree with these Terms of Service, you are prohibited from using or accessing {props.domain} and from using any other services we provide. We reserve the right to review and amend any of these Terms of Service at our sole discretion. Upon doing so, we will update this page. Any changes to these Terms of Service will take effect immediately from the date of publication.",
+                  "id": 4420253,
+                  "isVisible": true
+                }
+              ],
+              "isVisible": true,
+              "attributes": "{\n\n}",
+              "image": "",
+              "name": "",
+              "classNames": [],
+              "classNameExpressions": [],
+              "style": ""
+            },
+            {
+              "type": "element",
+              "tagName": "p",
+              "id": 895276,
+              "children": [
+                {
+                  "type": "text",
+                  "text": "This policy was last updated on October 5th, 2021.",
+                  "id": 9029617,
+                  "isVisible": true
+                }
+              ],
+              "isVisible": true,
+              "attributes": "{\n\n}",
+              "image": "",
+              "name": "",
+              "classNames": [],
+              "classNameExpressions": [],
+              "style": ""
+            },
+            {
+              "type": "element",
+              "tagName": "h2",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Limitations of Use",
+                  "id": 7690026,
+                  "isVisible": true
+                }
+              ],
+              "id": 8868419,
+              "isVisible": true,
+              "attributes": "{\n\n}",
+              "image": "",
+              "name": "",
+              "classNames": [],
+              "classNameExpressions": [],
+              "style": ""
+            },
+            {
+              "type": "element",
+              "tagName": "p",
+              "id": 7307858,
+              "children": [
+                {
+                  "type": "text",
+                  "text": "By using {props.domain}, you warrant on behalf of yourself, your users, and other parties you represent that you will not:",
+                  "id": 1142874,
+                  "isVisible": true
+                }
+              ],
+              "isVisible": true,
+              "attributes": "{\n\n}",
+              "image": "",
+              "name": "",
+              "classNames": [],
+              "classNameExpressions": [],
+              "style": ""
+            },
+            {
+              "type": "element",
+              "tagName": "ol",
+              "id": 5782642,
+              "children": [
+                {
+                  "type": "element",
+                  "tagName": "li",
+                  "id": 84103,
+                  "children": [
+                    {
+                      "type": "text",
+                      "text": "modify, copy, prepare derivative works of, decompile, or reverse engineer any materials and software contained on the GetTerms.io website.",
+                      "id": 1791729,
+                      "isVisible": true
+                    }
+                  ],
+                  "isVisible": true,
+                  "attributes": "{\n\n}",
+                  "image": "",
+                  "name": "",
+                  "classNames": [],
+                  "classNameExpressions": [],
+                  "style": ""
+                },
+                {
+                  "type": "element",
+                  "tagName": "li",
+                  "id": 3713404,
+                  "children": [
+                    {
+                      "type": "text",
+                      "text": "remove any copyright or other proprietary notations from any materials and software on the {props.domain} website.",
+                      "id": 2759322,
+                      "isVisible": true
+                    }
+                  ],
+                  "isVisible": true,
+                  "attributes": "{\n\n}",
+                  "image": "",
+                  "name": "",
+                  "classNames": [],
+                  "classNameExpressions": [],
+                  "style": ""
+                },
+                {
+                  "type": "element",
+                  "tagName": "li",
+                  "id": 103964,
+                  "children": [
+                    {
+                      "type": "text",
+                      "text": "etc",
+                      "id": 9943973,
+                      "isVisible": true
+                    }
+                  ],
+                  "isVisible": true,
+                  "attributes": "{\n\n}",
+                  "image": "",
+                  "name": "",
+                  "classNames": [],
+                  "classNameExpressions": [],
+                  "style": ""
+                }
+              ],
+              "isVisible": true,
+              "attributes": "{\n\n}",
+              "image": "",
+              "name": "",
+              "classNames": [],
+              "classNameExpressions": [],
+              "style": ""
+            },
+            {
+              "type": "element",
+              "tagName": "h2",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Another header",
+                  "id": 1032604,
+                  "isVisible": true
+                }
+              ],
+              "id": 8594608,
+              "isVisible": true,
+              "attributes": "{\n\n}",
+              "image": "",
+              "name": "",
+              "classNames": [],
+              "classNameExpressions": [],
+              "style": ""
+            },
+            {
+              "type": "element",
+              "tagName": "p",
+              "id": 9003617,
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Another paragraph of text",
+                  "id": 6244904,
+                  "isVisible": true
+                }
+              ],
+              "isVisible": true,
+              "attributes": "{\n\n}",
+              "image": "",
+              "name": "",
+              "classNames": [],
+              "classNameExpressions": [],
+              "style": ""
+            }
+          ],
+          "isVisible": true,
+          "attributes": "{\n\n}"
+        }
+      ],
+      "id": 573139,
+      "isVisible": true,
+      "nameLibrary": "",
+      "description": "",
+      "tags": [],
+      "code": "",
+      "muiStyle": "{\n\n}"
+    },
+    {
+      "type": "component",
+      "name": "LegalPrivacy",
+      "children": [
+        {
+          "type": "instance",
+          "componentId": 4995083,
+          "id": 5168228,
+          "children": [
+            {
+              "type": "element",
+              "tagName": "h1",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Privacy Policy",
+                  "id": 9906778,
+                  "isVisible": true
+                }
+              ],
+              "id": 1842411,
+              "isVisible": true,
+              "attributes": "{\n\n}",
+              "image": "",
+              "name": "",
+              "classNames": [],
+              "classNameExpressions": [],
+              "style": ""
+            },
+            {
+              "type": "element",
+              "tagName": "p",
+              "id": 6577780,
+              "children": [
+                {
+                  "type": "text",
+                  "text": "This document is a placeholder. You should replace this with your own Privacy Policy or create one using&nbsp;\n<a href=\"https://avodocs.com\" target=\"_blank\" rel=\"noreferrer\">avodocs.com</a>,&nbsp;\n<a href=\"https://getterms.io\" target=\"_blank\" rel=\"noreferrer\">getterms.io</a> or&nbsp;\n<a href=\"https://termly.io\" target=\"_blank\" rel=\"noreferrer\">termly.io</a>. We've included some example HTML structure below to make adding your content easier ↴",
+                  "id": 7256587,
+                  "isVisible": true
+                }
+              ],
+              "isVisible": true,
+              "attributes": "{\n\n}",
+              "image": "",
+              "name": "",
+              "classNames": [],
+              "classNameExpressions": [],
+              "style": ""
+            },
+            {
+              "type": "element",
+              "tagName": "p",
+              "id": 6235265,
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Your privacy is important to us. It’s our policy to respect your privacy and comply with any applicable law and regulation regarding the personal information we collect about you through this website, {props.domain}, and through any associated services and third-party platforms we may use.",
+                  "id": 5591414,
+                  "isVisible": true
+                }
+              ],
+              "isVisible": true,
+              "attributes": "{\n\n}",
+              "image": "",
+              "name": "",
+              "classNames": [],
+              "classNameExpressions": [],
+              "style": ""
+            },
+            {
+              "type": "element",
+              "tagName": "p",
+              "id": 837121,
+              "children": [
+                {
+                  "type": "text",
+                  "text": "This policy was last updated on October 5th, 2021.",
+                  "id": 1735485,
+                  "isVisible": true
+                }
+              ],
+              "isVisible": true,
+              "attributes": "{\n\n}",
+              "image": "",
+              "name": "",
+              "classNames": [],
+              "classNameExpressions": [],
+              "style": ""
+            },
+            {
+              "type": "element",
+              "tagName": "h2",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Information we collect",
+                  "id": 1251224,
+                  "isVisible": true
+                }
+              ],
+              "id": 1566476,
+              "isVisible": true,
+              "attributes": "{\n\n}",
+              "image": "",
+              "name": "",
+              "classNames": [],
+              "classNameExpressions": [],
+              "style": ""
+            },
+            {
+              "type": "element",
+              "tagName": "p",
+              "id": 3661914,
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Personal information is any information about you which can be used to identify you. Any information we collect may be automatically collected (i.e. information automatically sent to us by your devices when you access our services) or voluntarily provided (i.e. information you knowingly and actively provide us).",
+                  "id": 9143304,
+                  "isVisible": true
+                }
+              ],
+              "isVisible": true,
+              "attributes": "{\n\n}",
+              "image": "",
+              "name": "",
+              "classNames": [],
+              "classNameExpressions": [],
+              "style": ""
+            },
+            {
+              "type": "element",
+              "tagName": "h3",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Automatically collected information",
+                  "id": 1039641,
+                  "isVisible": true
+                }
+              ],
+              "id": 7081052,
+              "isVisible": true,
+              "attributes": "{\n\n}",
+              "image": "",
+              "name": "",
+              "classNames": [],
+              "classNameExpressions": [],
+              "style": ""
+            },
+            {
+              "type": "element",
+              "tagName": "p",
+              "id": 8494613,
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Our servers automatically log standard data provided by your web browser when you visit our website. This data may include your device’s IP address, device type, operating system, browser type and version, the pages you visit, the time and date of your visit, time spent on each page, and other details about your visit or device.",
+                  "id": 6824733,
+                  "isVisible": true
+                }
+              ],
+              "isVisible": true,
+              "attributes": "{\n\n}",
+              "image": "",
+              "name": "",
+              "classNames": [],
+              "classNameExpressions": [],
+              "style": ""
+            },
+            {
+              "type": "element",
+              "tagName": "h3",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Another subheader",
+                  "id": 5280113,
+                  "isVisible": true
+                }
+              ],
+              "id": 3452347,
+              "isVisible": true,
+              "attributes": "{\n\n}",
+              "image": "",
+              "name": "",
+              "classNames": [],
+              "classNameExpressions": [],
+              "style": ""
+            },
+            {
+              "type": "element",
+              "tagName": "p",
+              "id": 666520,
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Another paragraph of text",
+                  "id": 1056875,
+                  "isVisible": true
+                }
+              ],
+              "isVisible": true,
+              "attributes": "{\n\n}",
+              "image": "",
+              "name": "",
+              "classNames": [],
+              "classNameExpressions": [],
+              "style": ""
+            },
+            {
+              "type": "element",
+              "tagName": "h2",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Another main header",
+                  "id": 1617450,
+                  "isVisible": true
+                }
+              ],
+              "id": 7150591,
+              "isVisible": true,
+              "attributes": "{\n\n}",
+              "image": "",
+              "name": "",
+              "classNames": [],
+              "classNameExpressions": [],
+              "style": ""
+            },
+            {
+              "type": "element",
+              "tagName": "p",
+              "id": 1354262,
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Another paragraph of text",
+                  "id": 5150772,
+                  "isVisible": true
+                }
+              ],
+              "isVisible": true,
+              "attributes": "{\n\n}",
+              "image": "",
+              "name": "",
+              "classNames": [],
+              "classNameExpressions": [],
+              "style": ""
+            }
+          ],
+          "isVisible": true,
+          "attributes": "{\n\n}"
+        }
+      ],
+      "id": 4078787,
+      "isVisible": true,
+      "nameLibrary": "",
+      "description": "",
+      "tags": [],
+      "code": "",
+      "muiStyle": "{\n\n}"
+    },
+    {
+      "type": "component",
+      "id": 4995083,
+      "name": "LongContent",
+      "children": [
+        {
+          "type": "element",
+          "tagName": "div",
+          "id": 5738005,
+          "style": "h1 { \n  font-size: 2.125rem; \n  margin-bottom: 0.75rem;\n}\n\nh2 { \n  font-size: 1.75rem; \n  &:not(:first-child) {\n \t\tmargin-top: 2rem;\n\t}\n}\n\nh3 { \n  font-size: 1.25rem; \n  &:not(:first-child) {\n   margin-top: 1.5rem;\n  }\n}",
+          "children": [
+            {
+              "type": "children",
+              "id": 5174160,
+              "isVisible": true
+            }
+          ],
+          "isVisible": true,
+          "attributes": "{\n\n}",
+          "image": "",
+          "name": "",
+          "classNames": [],
+          "classNameExpressions": []
+        }
+      ],
+      "isVisible": true,
+      "nameLibrary": "",
+      "description": "",
+      "tags": [],
+      "code": "",
+      "muiStyle": "{\n\n}"
+    }
+  ]
+}
