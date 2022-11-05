@@ -4,13 +4,12 @@ import NavbarCustom from "components/NavbarCustom";
 import HeroSection from "components/HeroSection";
 import StatsSection from "components/StatsSection";
 import Footer from "components/Footer";
-import handler from "./api/get_employees";
 
 
 //create getStaticProps function to fetch data from API. Fetch data from handler function. It will return JSON data.
 // Turn JSON data into JavaScript object. Pass JavaScript object to IndexPage component as props.
 export async function getStaticProps() {
-    const res = await handler();
+    const res = await fetch('http://localhost:3000/api/get_employees');
     const data = await res.json();
     return {
         props: {
