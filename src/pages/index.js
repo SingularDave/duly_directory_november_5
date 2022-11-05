@@ -4,7 +4,7 @@ import NavbarCustom from "components/NavbarCustom";
 import HeroSection from "components/HeroSection";
 import StatsSection from "components/StatsSection";
 import Footer from "components/Footer";
-
+import SearchSection from "../components/SearchSection";
 
 
 function IndexPage(props) {
@@ -28,7 +28,7 @@ function IndexPage(props) {
                 subtitle=""
                 image="https://imagedelivery.net/68SN6RDwKYb315QTtTsC9w/733ebe6c-a6d2-4129-58e4-c2da62fccb00/ScaleDown"
             />
-            {/*<SearchSection />*/}
+            <SearchSection />
             <StatsSection
                 bg="light"
                 textColor="dark"
