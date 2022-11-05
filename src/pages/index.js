@@ -6,20 +6,6 @@ import StatsSection from "components/StatsSection";
 import Footer from "components/Footer";
 
 
-export async function getStaticProps() {
-    const res = {animals: ['dog', 'cat', 'bird']};
-    try {
-        return {
-            props: {
-                animals: res.animals
-            }
-        };
-    }
-    catch (err) {
-        console.log(err);
-    }
-}
-
 function IndexPage(props) {
     console.log('props', props);
     return (
