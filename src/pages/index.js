@@ -50,3 +50,15 @@ function IndexPage(props) {
 }
 
 export default IndexPage;
+
+// getStaticProps() to fetch data from an external API endpoint and pass it into the page via props. Fetch JSON from
+// pages/api/get_eomployees.js.
+export async function getStaticProps() {
+    const res = await fetch('https://localhost:3000/api/get_employees');
+    const data = await res.json();
+    return {
+        props: {
+            data
+        }
+    }
+}

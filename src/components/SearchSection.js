@@ -45,7 +45,6 @@ export default function SearchSection(props) {
         defaultValue: '',
         value: ''
     });
-    const DropdownList = [Dropdown1, Dropdown2, Dropdown3, Dropdown4, Dropdown5];
     const [SelectedSpecialty, setSelectedSpecialty] = useState(null);
     const [SelectedProviders, setSelectedProviders] = useState(null);
     const [SearchFoundNone, setSearchFoundNone] = useState(false);
@@ -548,23 +547,3 @@ export default function SearchSection(props) {
 }
 
 
-export async function getStaticProps() {
-    try {
-        const res = await fetch('http://localhost:3000/pages/api/get_employees.js');
-        const all_providers = await res.json();
-        return {
-            props: {
-                all_providers
-            }
-        }
-    } catch (error) {
-        console.log(error);
-        const res = await fetch('https://cloudflare_duly_directory.singulardavepratt.workers.dev/');
-        const all_providers = await res.json();
-        return {
-            props: {
-                all_providers
-            }
-        }
-    }
-}
