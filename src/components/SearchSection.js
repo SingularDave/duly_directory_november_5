@@ -1,15 +1,15 @@
-import React, {useEffect} from "react";
+import React, {useEffect, useState} from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import DropdownComponent from "components/DropDownComponent";
-import {useState} from "react";
 import Button from "react-bootstrap/Button";
 import EmployeeCard from "./EmployeeCard";
 
 
 export default function SearchSection(props) {
+    console.log("SearchSection props: ", props);
     const {all_providers} = props;
     const {
         list_of_specialties
@@ -45,13 +45,11 @@ export default function SearchSection(props) {
         defaultValue: '',
         value: ''
     });
-    const DropdownList = [Dropdown1, Dropdown2, Dropdown3, Dropdown4, Dropdown5];
     const [SelectedSpecialty, setSelectedSpecialty] = useState(null);
     const [SelectedProviders, setSelectedProviders] = useState(null);
     const [SearchFoundNone, setSearchFoundNone] = useState(false);
 
     useEffect(() => {
-        // If Dropdown3.options are empty, then set Dropdown3.options to null.
         if (Dropdown3.options !== null && Dropdown3.options.length === 0) {
             setDropdown3({
                 ...Dropdown3,
@@ -460,23 +458,17 @@ export default function SearchSection(props) {
             selected_providers = search_for_terms(all_providers.non_surgical_orthopedist.providers, search_terms);
         } else if (Dropdown1.value === list_of_specialties[1]) {
             selected_providers = search_for_terms(all_providers.surgical_orthopedist.providers, search_terms);
-        }
-        else if (Dropdown1.value === list_of_specialties[2]) {
+        } else if (Dropdown1.value === list_of_specialties[2]) {
             selected_providers = search_for_terms(all_providers.non_surgical_spine.providers, search_terms);
-        }
-        else if (Dropdown1.value === list_of_specialties[3]) {
+        } else if (Dropdown1.value === list_of_specialties[3]) {
             selected_providers = search_for_terms(all_providers.surgical_spine.providers, search_terms);
-        }
-        else if (Dropdown1.value === list_of_specialties[4]) {
+        } else if (Dropdown1.value === list_of_specialties[4]) {
             selected_providers = search_for_terms(all_providers.non_surgical_cardiologist.providers, search_terms);
-        }
-        else if (Dropdown1.value === list_of_specialties[5]) {
+        } else if (Dropdown1.value === list_of_specialties[5]) {
             selected_providers = search_for_terms(all_providers.surgical_cardiologist.providers, search_terms);
-        }
-        else if (Dropdown1.value === list_of_specialties[6]) {
+        } else if (Dropdown1.value === list_of_specialties[6]) {
             selected_providers = search_for_terms(all_providers.physical_therapist.providers, search_terms);
-        }
-        else if (Dropdown1.value === list_of_specialties[7]) {
+        } else if (Dropdown1.value === list_of_specialties[7]) {
             selected_providers = search_for_terms(all_providers.occupational_therapist.providers, search_terms);
         }
         if (selected_providers.length === 0) {
@@ -490,15 +482,15 @@ export default function SearchSection(props) {
 
     //Create useEffect function to update DOM when SelectedProviders changes.
     useEffect(() => {
-        console.log(SelectedProviders);
-    }
-    , [SelectedProviders]);
+            console.log(SelectedProviders);
+        }
+        , [SelectedProviders]);
 
     // Create useEffect function to update DOM when SearchFoundNone changes.
     useEffect(() => {
-        console.log('SearchFoundNone:' + SearchFoundNone);
-    }
-    , [SearchFoundNone]);
+            console.log('SearchFoundNone:' + SearchFoundNone);
+        }
+        , [SearchFoundNone]);
 
     return (
         <section className="search-section">
@@ -535,10 +527,12 @@ export default function SearchSection(props) {
                                                            onChange={(value) => handleDropdownChange(value, "dropdown5")}
                                                            value={Dropdown5.value}/>
                                         <div className="col text-center">
-                                            <Button className="mt-4 btn btn-primary" size={"lg"} onClick={handleSearch}>Search</Button>
+                                            <Button className="mt-4 btn btn-primary" size={"lg"}
+                                                    onClick={handleSearch}>Search</Button>
                                         </div>
                                         <div className="col text-center">
-                                            <Button className="mb-2 mt-2 btn btn-secondary" size={"sm"} onClick={handleClear}>Clear</Button>
+                                            <Button className="mb-2 mt-2 btn btn-secondary" size={"sm"}
+                                                    onClick={handleClear}>Clear</Button>
                                         </div>
                                     </Col>
                                 </Row>
@@ -551,3 +545,5 @@ export default function SearchSection(props) {
         </section>
     );
 }
+
+

@@ -4,6 +4,7 @@ import NavbarCustom from "components/NavbarCustom";
 import HeroSection from "components/HeroSection";
 import StatsSection from "components/StatsSection";
 import Footer from "components/Footer";
+import SearchSection from "../components/SearchSection";
 
 
 function IndexPage(props) {
@@ -27,7 +28,7 @@ function IndexPage(props) {
                 subtitle=""
                 image="https://imagedelivery.net/68SN6RDwKYb315QTtTsC9w/733ebe6c-a6d2-4129-58e4-c2da62fccb00/ScaleDown"
             />
-            {/*<SearchSection />*/}
+            <SearchSection />
             <StatsSection
                 bg="light"
                 textColor="dark"
@@ -49,3 +50,20 @@ function IndexPage(props) {
 }
 
 export default IndexPage;
+
+// getStaticProps() to fetch data from an external API endpoint and pass it into the page via props. Fetch JSON from
+// pages/api/get_eomployees.js.
+export async function getStaticProps() {
+    const res = await fetch('https://localhost:3000/api/get_employees', {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+    });
+    const data = await res.json();
+    return {
+        props: {
+            data
+        }
+    }
+}
